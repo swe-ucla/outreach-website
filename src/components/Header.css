@@ -1,0 +1,51 @@
+.body {
+    margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #c0abe7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #800080; /* Purple for SWE */
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.nav a:hover {
+  color: #800080;
+}
+
+.swe_logo {
+    margin-top: 0.5rem;
+    width: 180px;
+    height: auto;
+}
