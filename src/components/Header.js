@@ -17,10 +17,7 @@ function Header() {
           />
           <li><a href="/events" target="_blank">Meet the Team</a></li>
           <li><a href="/contact" target="_blank">Contact us</a></li>
-          {/* <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/contact">Contact</a></li> */}
+          
         </ul>
       </nav>
     </header>
