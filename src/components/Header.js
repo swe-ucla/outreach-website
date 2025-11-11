@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
 
+import { Link } from 'react-router-dom';
+
 function Header() {
   return (
     <header className="header">
@@ -16,8 +18,9 @@ function Header() {
             className="swe_logo"
           />
           <li><a href="/events" target="_blank">Meet the Team</a></li>
-          <li><a href="/contact" target="_blank">Contact us</a></li>
-          
+          {/* <li><a href="/contact" target="_blank">Contact us</a></li> */}
+          <li><Link to="/contact" target="_blank">Contact us</Link></li>
+
         </ul>
       </nav>
     </header>
