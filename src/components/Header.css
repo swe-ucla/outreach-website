@@ -1,0 +1,35 @@
+header {
+    background-color: #a298da;
+    padding: .05rem 1rem;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    margin-left: 3.5rem;
+    margin-top: .75rem;
+}
+
+.nav img {
+    width: 13rem;
+    margin-top: -.15rem;
+    margin-left: 3rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    color:#f6eb9d;
+}
+
