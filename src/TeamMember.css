@@ -5,8 +5,8 @@
 }
 
 .member-photo {
-    width: 90px;
-    height: 90px;
+    width: 6.0rem;
+    height: 6.0rem;
     background-color: #e9e5d9;
     border-radius: 2px;
     margin-bottom: 0.5rem;
@@ -40,5 +40,6 @@
     font-family: "Helvetica Neue";
     font-size: 0.9rem;
     color: #333;
+    margin-bottom: 2.0rem;
     line-height: 1.1;
 }
