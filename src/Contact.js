@@ -1,6 +1,6 @@
 import './Contact.css';
 
-import Footer from './Footer'
+import Footer from './components/Footer'
 
 function Contact() {
   return (
