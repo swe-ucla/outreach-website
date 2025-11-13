@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+ font-family: "ProvidenceSansBold";
+ src: local("ProvidenceSansBold"),
+  url("./fonts/ProvidenceSansBold.ttf") format("truetype");
+ font-weight: bold;
+}
+
+@font-face {
+ font-family: "RecoletaBold";
+ src: local("RecoletaBold"),
+  url("./fonts/RecoletaBold.ttf") format("truetype");
+ font-weight: bold;
+}
+
