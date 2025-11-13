@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Recoleta';
+  src: url('https://font-public.canva.com/YAFcf2ThYuU/0/subsets/Recoleta-Bold4135989325187831969.92dd2ec.565ab65d-840d-432a-b780-70a55f4.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 .team-section {
     display: flex;
     flex-direction: column;
@@ -7,7 +15,7 @@
 }
 
 .team-title {
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
     font-family: "Recoleta";
