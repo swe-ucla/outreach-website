@@ -8,6 +8,8 @@
     font-size : 80px;
     font-family: "Recoleta", "Georgia", serif;
     margin-left: 8%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .box_row {
@@ -15,6 +17,7 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .image_box {
