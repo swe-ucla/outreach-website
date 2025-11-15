@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div>
         <Header />
-        <h1 className="title">contact us:</h1>
+        <h1 className="contact_title">contact us:</h1>
         <div className="box_row">
             <img className="image_box" src="/images/contact_1.png" />
             <img className="image_box" src="/images/contact_2.png" />
