@@ -1,7 +1,7 @@
 header {
     background-color: #a298da;
     padding: .05rem 1rem;
-    margin-bottom: 20px;
+    min-width: 100vw;
 }
 
 .nav ul {
