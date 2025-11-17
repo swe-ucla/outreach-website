@@ -3,7 +3,7 @@
     src: url("./fonts/Recoleta_SemiBold.ttf") format("truetype");
 }
 
-.title {
+.contact_title {
     display: flex;
     font-size : 80px;
     font-family: "Recoleta", "Georgia", serif;
