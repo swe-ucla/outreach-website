@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Recoleta';
+  src: url('https://font-public.canva.com/YAFcf2ThYuU/0/subsets/Recoleta-Bold4135989325187831969.92dd2ec.565ab65d-840d-432a-b780-70a55f4.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FF Providence Sans';
+  src: url('./fonts/ProvidenceSansBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-now'); 
+
+/* Base page styling */
+body {
+  font-family: 'Helvetica Now', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+/* Main layout */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+/* Left column (text) */
+.text-section {
+  flex: 1 1 400px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Helvetica Now', sans-serif;
+}
+
+/* Right column (images) */
+.image-section {
+  flex: 2 1 500px; 
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-family: 'Recoleta', serif;
+  font-size: 4rem;
+  margin: 0; 
+  padding: 0; 
+  text-align: left;
+  line-height: 1.2;
+  max-width: 100%; 
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 0;
+  max-width: 80%;
+}
+
+/* Event info */
+.event-info p {
+  margin: 5px 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.schedule {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Button */
+button {
+  background: none;
+  border: 2px solid black;
+  padding: 8px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1.5px black;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Images */
+.full-width-image img,
+.image-with-caption img,
+.two-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.image-with-caption {
+  text-align: center;
+}
+
+.image-with-caption p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.two-images {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.two-images img {
+  object-fit: cover; 
+  height: 240px; 
+}
+
+.two-images .left-img {
+  flex: 1; 
+}
+
+.two-images .right-img {
+  flex: 2; 
+}
+
+.caption {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  font-family: 'FF Providence Sans', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: -0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .text-section,
+  .image-section {
+    flex: 1 1 100%;
+  }
+
+  .two-images {
+    flex-direction: column;
+  }
+
+  .two-images img {
+    width: 100%;
+  }
+}
