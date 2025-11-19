@@ -1,73 +1,94 @@
-.home-content {
+.intro-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
-    gap: 3rem;
+    padding: 2rem;
+    gap: 2.75rem;
+    background-color: #a298da;
+    color: white;
 }
 
 .image-caption {
     text-align: left;
     font-size: 20px;
     font-family: "ProvidenceSansBold";
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .group-pic {
     width: 100%;
-    max-width: 42rem;
+    max-width: 55rem;
     height: auto;
+    border-radius: 2rem;
 }
 
 .home-heading {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-width: 10px;
-    border-color: black;
+    flex-direction: column;
+    text-align: left;
 }
 
 .home-heading img {
-    margin-left: 0.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.25rem;
+    margin-left: 0.75rem;
+    height: 3rem;
+    width: auto;
 }
 
 .heading-text {
     font-family: "RecoletaBold";
-    font-size: 45px;
-    margin-bottom: 0;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 2.5rem;
 }
 
 .home-description {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 23px;
-    max-width: 29rem;
-    gap: .5rem;
+    font-size: 1.4rem;
+    max-width: 19rem;
+}
+
+.second-line {
+    display: flex;
+}
+
+.second-line p {
+    font-family: "RecoletaBold";
+    font-size: 3rem;
+    margin: 0;
 }
 
 .home-text {
     text-align: left;
-    margin-top: 0;
+    margin-top: 0.25rem;
+    max-width: 18rem;
 }
 
-.contact-button {
-    width: 14.5rem;
-    height: 3.85rem;
+.learn-more-button {
+    width: 12.75rem;
+    height: 3.75rem;
     border-radius: 10px;
     border: none;
-    box-shadow: inset 0 0 0 4.5px black;
-    font-size: 28px;
+    box-shadow: inset 0 0 0 4.5px white;
+    font-size: 1.5rem;
     font-weight: bold;
-    background-color: white;
-    margin: 0 auto;
+    color: white;
+    background-color: #a298da;
     cursor: pointer;
     transition: transform 0.1s ease;
 }
+.learn-more-button:hover {
+    color: #f6eb9d;
+    box-shadow: inset 0 0 0 4.5px #f6eb9d;
+}
 
-.contact-button:active {
+.learn-more-button:active {
     transform: scale(0.95)
+}
+
+.info-content {
+    background-color: white;
 }
