@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css';
 import Header from '../components/Header.js';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -18,7 +19,9 @@ function Home() {
                         <img src='./images/UCLA-logo.svg' alt='UCLA logo'></img>
                     </div>
                     <p className='home-text'>hi! we’re a passionate group of college students dedicated to inspiring the next generation of women in engineering. during the school year, we host several events for local students to learn various engineering concepts.</p>
-                    <button className="contact-button">contact us</button>
+                    <Link to="/contact-us">
+                        <button className="contact-button">contact us</button>
+                    </Link>
                 </div>
             </div>
             
