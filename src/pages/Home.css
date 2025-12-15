@@ -1,11 +1,37 @@
+.home-section {
+    margin: 0;
+    padding: 0;
+}
+
 .intro-content {
+    color: white;
+    background-color: #a298da;
+}
+
+.home-container {
+    max-width: 200rem;
+}
+
+.info-content {
+    background-color: white;
+}
+
+.intro-content .home-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
     gap: 2.75rem;
-    color: white;
-    background-color: #a298da;
+}
+
+.info-content .home-container {
+    padding: 2rem;
+    padding-top: 3.5rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-block {
@@ -58,6 +84,10 @@
     padding-bottom: 4rem;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
 .second-line {
     display: flex;
     margin-top: 0.7rem;
@@ -84,10 +114,11 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-    background-color: #a298da;
+    background-color: transparent;
     cursor: pointer;
     transition: transform 0.1s ease;
 }
+
 .learn-more-button:hover {
     color: #f6eb9d;
     box-shadow: inset 0 0 0 4.5px #f6eb9d;
@@ -97,20 +128,17 @@
     transform: scale(0.95)
 }
 
-.info-content {
-    background-color: white;
-    padding: 2rem;
-    padding-top: 3.5rem;
-    gap: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .top-cards {
     display: flex;
     gap: 3.5rem;
+    width: 100%;
+    max-width: 77.5rem;
+}
+
+.left, .right {
+    position: relative;
+    overflow: hidden;
+    max-height: 25rem;
 }
 
 .top-cards img {
@@ -120,12 +148,25 @@
     height: auto;
 }
 
-.bottom img {
-    max-width: 50rem;
+.bottom-card {
+    position: relative;
+    display: flex;
     border-radius: 2rem;
+    overflow: hidden;
     width: 100%;
-    height: auto;
-    align-self: left;
+    max-width: 77.5rem; 
+    max-height: 25rem; 
+}
+
+.bottom {
+    flex: 3; 
+    min-width: 0; 
+    display: flex; 
+}
+
+.bottom img {
+    border-radius: 2rem 0 0 2rem;
+    display: block; 
 }
 
 .left, .right, .bottom {
@@ -136,30 +177,44 @@
 .left img,
 .right img,
 .bottom img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    vertical-align: bottom; 
 }
 
 .left::after,
-.right::after,
-.bottom::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  border-radius: 2rem;
-  z-index: 1;
+.right::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 2rem;
+    z-index: 1;
+    background: linear-gradient(
+        to bottom,
+        rgba(142, 130, 209, 0) 0%,
+        rgba(142, 130, 209, 0.8) 100%
+    );
+}
 
-  background: linear-gradient(
-    to bottom,
-     rgba(162, 152, 218, 0) 0%,
-     rgba(162, 152, 218, 0.6) 100%
-  );
+.bottom::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-radius: 0;
+    z-index: 1;
+    background: linear-gradient(
+        to right,
+        rgba(142, 130, 209, 0) 0%,
+        rgba(142, 130, 209, 1) 100%
+    );
 }
 
 .overlay-text {
@@ -172,13 +227,82 @@
     text-align: left;
 }
 
-.overlay-text h2 {
+.overlay-text h2, .purple-card h2 {
     font-family: "RecoletaBold";
     color: white;
     font-size: 3rem;
     margin: 0;
 }
 
-.overlay-text button {
-    background-color: transparent;
+.purple-card {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8e82d1;
+    border-radius: 0 2rem 2rem 0;
+    color: white;
+    z-index: 2;
+    text-align: left;
+}
+
+.bottom-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.overlay-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-heading { 
+    transition: transform 0.3s ease; 
+} 
+    
+.hover-description {
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size: 1.4rem;
+    max-width: 25rem; 
+    opacity: 0; 
+    overflow: hidden; 
+    transform: translateY(0.5rem); 
+    transition: 
+        opacity 0.7s ease, 
+        transform 0.9s ease; 
+} 
+
+.overlay-text:has(.learn-more-button:hover) .card-heading { 
+    transform: translateY(-12rem); 
+} 
+
+.overlay-text:has(.learn-more-button:hover) .hover-description { 
+    opacity: 1; 
+    transform: translateY(-16rem); 
+} 
+
+.left::before, .right::before { 
+    content: ""; 
+    position: absolute;
+    inset: 0; 
+    border-radius: 2rem; 
+    background-color: rgba(142, 130, 209, 0.6);
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 1; 
+    pointer-events: none; 
+} 
+
+.left:has(.learn-more-button:hover)::before, .right:has(.learn-more-button:hover)::before { 
+    opacity: 1; 
 }
