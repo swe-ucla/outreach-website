@@ -1,6 +1,8 @@
 import React from "react";
 import './Home.css';
 import Header from '../components/Header.js';
+import Footer from '../components/Footer'
+
 
 function Home() {
     return (
@@ -89,6 +91,8 @@ function Home() {
                     
 
                 </div>
+
+                <Footer />
 
             </section>
             
