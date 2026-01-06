@@ -16,7 +16,7 @@ function Header(){
                         <Link to="/fall-workshop">Fall College Workshop Series</Link>
                     </div>
                 </li>
-                <li className='projects'><a href="/projects">Projects</a></li>
+                <li className='projects'><Link to="/projects">Projects</Link></li>
                 <Link to="/"><img className='swe-outreach' src="/images/swe_outreach_logo.png" alt="swe outreach logo"/></Link>
                 <li className='meet-the-team'><Link to="/meet-the-team">Meet the Team</Link></li>
                 <li className='contact-us'><Link to="/contact-us">Contact Us</Link></li>

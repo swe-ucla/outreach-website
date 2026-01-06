@@ -7,6 +7,7 @@ import HiEngineer from './HiEngineer';
 import ProjectScientist from './ProjectScientist';
 import EngineeringStayover from './EngineeringStayover';
 import FallWorkshop from './FallWorkshop';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/project-scientist" element={<ProjectScientist />}/>
           <Route path="/engineering-stayover" element={<EngineeringStayover />}/>
           <Route path="/fall-workshop" element={<FallWorkshop />}/>
+          <Route path="/projects" element={<Projects />}/>
         </Routes>
       </div>
     </Router>
