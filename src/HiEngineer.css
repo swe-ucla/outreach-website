@@ -85,7 +85,7 @@ body {
 }
 
 /* Button */
-button {
+.register-btn {
   background: none;
   border: 2px solid black;
   padding: 8px 30px;
@@ -98,7 +98,7 @@ button {
   font-size: 1.1rem;
 }
 
-button:hover {
+.register-btn:hover {
   background-color: black;
   color: white;
 }
