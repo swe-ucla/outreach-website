@@ -16,25 +16,26 @@ import dots from "./images/play-doh.png";
 function Projects() {
     const projects = [
         {
-            title: "diy prosthetic hand",
+            title: "bionic hands",
             image: hand,
             tags: [
-                { label: "middle", color: "yellow" },
+                { label: "elementary", color: "yellow" },
                 { label: "both", color: "blue" },
                 { label: "mechanical", color: "red" },
                 { label: "difficult", color: "green" }
             ],
 
-            gradeLevel: "middle",
+            gradeLevel: "elementary", 
             location: "both",
             subject: "mechanical engineering",
-            difficulty: "difficult"
+            difficulty: "difficult",
+            pdf: "/pdfs/bionic_hand.pdf"
         },
         {
-            title: "butterfly pea tea",
+            title: "wind-powered sail boats",
             image: butterfly,
             tags: [
-                { label: "middle", color: "yellow" },
+                { label: "elementary", color: "yellow" },
                 { label: "both", color: "blue" },
                 { label: "mechanical", color: "red" },
                 { label: "difficult", color: "green" }
@@ -43,7 +44,8 @@ function Projects() {
             gradeLevel: "elementary",
             location: "classroom",
             subject: "civil engineering",
-            difficulty: "moderate"
+            difficulty: "moderate",
+            pdf: "/pdfs/wind_powered_sailboat.pdf"
         },
         {
             title: "cs shark tank",
@@ -56,14 +58,20 @@ function Projects() {
             ]
         },
         {
-            title: "light up flowers",
+            title: "led paper flower",
             image: flower,
             tags: [
-                { label: "middle", color: "yellow" },
+                { label: "elementary", color: "yellow" },
                 { label: "both", color: "blue" },
                 { label: "mechanical", color: "red" },
                 { label: "difficult", color: "green" }
-            ]
+            ],
+
+            gradeLevel: "elementary", 
+            location: "both",
+            subject: "mechanical engineering",
+            difficulty: "difficult",
+            pdf: "/pdfs/led_paper_flower.pdf"
         },
         {
             title: "diy operation",
@@ -99,11 +107,17 @@ function Projects() {
             title: "play-doh circuits",
             image: dots,
             tags: [
-                { label: "middle", color: "yellow" },
+                { label: "elementary", color: "yellow" },
                 { label: "both", color: "blue" },
                 { label: "mechanical", color: "red" },
                 { label: "difficult", color: "green" }
-            ]
+            ], 
+
+            gradeLevel: "elementary", 
+            location: "both",
+            subject: "mechanical engineering",
+            difficulty: "difficult",
+            pdf: "/pdfs/play_doh_circuits.pdf"
         }
     ];
 

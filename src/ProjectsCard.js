@@ -1,9 +1,20 @@
 import React from 'react';
 import './ProjectCard.css';
 
-function ProjectCard({ title, image, tags }) {
+function ProjectCard({ title, image, tags, pdf }) {
+  
+  const handleClick = () => {
+    if (pdf) {
+      window.open(pdf, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
-    <div className="project-card">
+    <div 
+      className="project-card" 
+      onClick={handleClick} 
+      style={{ cursor: pdf ? 'pointer' : 'default' }}
+    >
       <h3 className="project-title">{title}</h3> 
 
       <div className="project-image-container">
