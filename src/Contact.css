@@ -23,4 +23,9 @@
 .image_box {
     width: 400px;
     height: auto;
+    transition: transform 0.2s ease;
+}
+
+.image_box:hover {
+    transform: scale(1.03);
 }

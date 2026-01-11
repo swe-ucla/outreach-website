@@ -36,7 +36,7 @@ function MeetTheTeam() {
           funFact: "Fun Fact: I am a certified yoga teacher.",
         },
         { name: "Ish Bali",
-          major:"Bioengineering Major",
+          major:"Bioengineering",
           year: "2nd Year",
           blurb:"Project Scientist Lead",
           funFact: "Fun Fact: I love chai.",
