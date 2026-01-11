@@ -43,6 +43,15 @@
     font-size: 0.9rem;
     color: #333;
     margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.1;
+}
+
+.member-fun-fact {
+    font-family: "Helvetica Neue";
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0.35rem;
     margin-bottom: 2.0rem;
     line-height: 1.1;
 }

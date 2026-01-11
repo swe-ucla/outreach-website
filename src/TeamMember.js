@@ -8,7 +8,8 @@ function TeamMember({ name, major, year, blurb, funFact }) {
             <div className="member-text">
                 <p className="member-name">{name}</p>
                 <p className="member-major">{year}, {major}</p>
-                <p className="member-blurb">{blurb}. {funFact}</p>
+                <p className="member-blurb">{blurb}</p>
+                <p className="member-fun-fact">{funFact}</p>
             </div>
         </div>
     );
