@@ -6,9 +6,9 @@ function TeamMember({ name, major, year, blurb, funFact }) {
         <div className="member">
             <div className="member-photo"></div>
             <div className="member-text">
-                <p className="member-name">[name]</p>
-                <p className="member-major">[major & year]</p>
-                <p className="member-blurb">[small blurb & fun fact]</p>
+                <p className="member-name">{name}</p>
+                <p className="member-major">{year}, {major}</p>
+                <p className="member-blurb">{blurb}. {funFact}</p>
             </div>
         </div>
     );

@@ -5,15 +5,15 @@
 }
 
 .member-photo {
-    width: 6.0rem;
-    height: 6.0rem;
+    width: 10.0rem;
+    height: 10.0rem;
     background-color: #e9e5d9;
     border-radius: 2px;
     margin-bottom: 0.5rem;
 }
 
 .member-text {
-    width: 90px;              
+    width: 10.0rem;              
     text-align: left;         
     display: flex;
     flex-direction: column;
@@ -24,22 +24,25 @@
     font-family: "Helvetica Neue";
     font-weight: 700;
     font-size: 0.95rem;
+    margin-top: 0.5rem;
     margin-bottom: 0;
-    line-height: 0.5; 
+    line-height: 1.1; 
 }
 
 .member-major {
     font-family: "Helvetica Neue";
     font-size: 0.9rem;
     color: #333;
-    margin-bottom: 0;
-    line-height: 0.5; 
+    margin-top: 0.35rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.1; 
 }
 
 .member-blurb {
     font-family: "Helvetica Neue";
     font-size: 0.9rem;
     color: #333;
+    margin-top: 0.35rem;
     margin-bottom: 2.0rem;
     line-height: 1.1;
 }
