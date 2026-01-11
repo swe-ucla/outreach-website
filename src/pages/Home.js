@@ -1,12 +1,8 @@
 import React from "react";
 import './Home.css';
 import Header from '../components/Header.js';
-<<<<<<< HEAD
-import { Link } from 'react-router-dom';
-=======
 import Footer from '../components/Footer'
 
->>>>>>> origin/main
 
 function Home() {
     return (
