@@ -35,7 +35,6 @@ function Home() {
                             <button className="learn-more-button">learn more</button>
                         </div>
                     </div>
-
                 </div>
 
                 {/*Bottom content*/}

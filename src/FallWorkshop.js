@@ -30,7 +30,8 @@
                         <img className="workshop_top_image" src="/images/fcws_1.png" />
                         <img className="workshop_bottom_image" src="/images/fcws_2.png" />
                         <div className="prev_rec_box">
-                            <a href="tbd" target="_blank">[Previous Recordings]</a>
+                            <a href="https://drive.google.com/file/d/11FC9wxpi1KcuntLHMAYcNM7kdhqHML4p/view?usp=sharing" target="_blank">Applying to Engineering</a>
+                            <a href="https://drive.google.com/file/d/1RL3aJ8gyOtQMF13HL6oqiffNq32FDxwc/view?usp=sharing" target="_blank">Meet the Majors</a>
                         </div>
                     </div>
                 </div>
