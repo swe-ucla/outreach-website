@@ -12,113 +12,127 @@ import questionMark from "./images/diy operation.png";
 import led from "./images/led.png";
 import arrow from "./images/pool noodle.png";
 import dots from "./images/play-doh.png";
+import waterDrops from "./images/water_drops.png";
+import lemon from "./images/lemon.png";
+
+const tagConfig = {
+    gradeLevel: {
+        elementary: { label: "elementary", color: "yellow" },
+        middle: { label: "middle", color: "yellow" },
+        high: { label: "high", color: "yellow" },
+    },
+    location: {
+        home: { label: "home", color: "blue" },
+        classroom: { label: "classroom", color: "blue" },
+        both: { label: "both", color: "blue" },
+    },
+    subject: {
+        "bioengineering": { label: "bioengineering", color: "red" },
+        "chemical engineering": { label: "chemical", color: "red" },
+        "civil engineering": { label: "civil", color: "red" },
+        "mechanical engineering": { label: "mechanical", color: "red" },
+        "electrical engineering": { label: "electrical", color: "red" },
+        "computer science": { label: "comp sci", color: "red" },
+    },
+    difficulty: {
+        easy: { label: "easy", color: "green" },
+        medium: { label: "medium", color: "green" },
+        difficult: { label: "difficult", color: "green" },
+    },
+};
 
 function Projects() {
     const projects = [
         {
             title: "bionic hands",
             image: hand,
-            tags: [
-                { label: "elementary", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ],
-
-            gradeLevel: "elementary", 
+            gradeLevel: "elementary",
             location: "both",
-            subject: "mechanical engineering",
-            difficulty: "difficult",
+            subject: "bioengineering",
+            difficulty: "easy",
             pdf: "/pdfs/bionic_hand.pdf"
         },
         {
             title: "wind-powered sail boats",
             image: butterfly,
-            tags: [
-                { label: "elementary", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ],
-
             gradeLevel: "elementary",
-            location: "classroom",
+            location: "both",
             subject: "civil engineering",
-            difficulty: "moderate",
+            difficulty: "easy",
             pdf: "/pdfs/wind_powered_sailboat.pdf"
         },
         {
             title: "cs shark tank",
             image: laptop,
-            tags: [
-                { label: "middle", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ]
+            gradeLevel: "high",
+            location: "both",
+            subject: "computer science",
+            difficulty: "medium",
+            pdf: "/pdfs/cs_shark_tank.pdf"
         },
         {
             title: "led paper flower",
             image: flower,
-            tags: [
-                { label: "elementary", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ],
-
-            gradeLevel: "elementary", 
+            gradeLevel: "elementary",
             location: "both",
-            subject: "mechanical engineering",
+            subject: "electrical engineering",
             difficulty: "difficult",
             pdf: "/pdfs/led_paper_flower.pdf"
         },
         {
             title: "diy operation",
             image: questionMark,
-            tags: [
-                { label: "middle", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ]
+            gradeLevel: "high",
+            location: "both",
+            subject: "electrical engineering",
+            difficulty: "difficult",
+            pdf: "/pdfs/operation.pdf"
         },
         {
             title: "wind-powered LEDs",
             image: led,
-            tags: [
-                { label: "middle", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ]
+            gradeLevel: "middle",
+            location: "both",
+            subject: "electrical engineering",
+            difficulty: "medium",
+            pdf: "/pdfs/led_windmills.pdf"
         },
         {
             title: "pool noodle rollercoasters",
             image: arrow,
-            tags: [
-                { label: "middle", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ]
+            gradeLevel: "middle",
+            location: "both",
+            subject: "mechanical engineering",
+            difficulty: "medium",
+            pdf: "/pdfs/roller_coaster.pdf"
         },
         {
             title: "play-doh circuits",
             image: dots,
-            tags: [
-                { label: "elementary", color: "yellow" },
-                { label: "both", color: "blue" },
-                { label: "mechanical", color: "red" },
-                { label: "difficult", color: "green" }
-            ], 
-
-            gradeLevel: "elementary", 
+            gradeLevel: "elementary",
             location: "both",
             subject: "mechanical engineering",
-            difficulty: "difficult",
+            difficulty: "medium",
             pdf: "/pdfs/play_doh_circuits.pdf"
-        }
+        },
+        {
+            title: "water filtration",
+            image: waterDrops,
+            gradeLevel: "middle",
+            location: "both",
+            subject: "civil engineering",
+            difficulty: "easy",
+            pdf: "/pdfs/water_filtration.pdf"
+        },
+        {
+            title: "lemon battery + solar oven",
+            image: lemon,
+            gradeLevel: "middle",
+            location: "both",
+            subject: "electrical engineering",
+            difficulty: "easy",
+            pdf: "/pdfs/lemon_batteries_solar_oven.pdf"
+        }  
     ];
 
     const [selectedFilters, setSelectedFilters] = useState({
@@ -146,7 +160,7 @@ function Projects() {
             "electrical engineering",
             "computer science"
         ],
-        difficulty: ["straightforward", "moderate", "difficult"]
+        difficulty: ["easy", "medium", "difficult"]
     };
 
     const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -217,9 +231,12 @@ function Projects() {
                     </div>
 
                     <div className="projects-grid">
-                        {filteredProjects.map((p, i) => (
-                            <ProjectsCard key={i} {...p} />
-                        ))}
+                        {filteredProjects.map((p, i) => {
+                            const tags = ["gradeLevel", "location", "subject", "difficulty"].map(
+                            category => tagConfig[category][p[category]]
+                            );
+                            return <ProjectsCard key={i} {...p} tags={tags} />;
+                        })}
                     </div>
 
                 </div>
