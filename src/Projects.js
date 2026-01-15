@@ -21,14 +21,9 @@ const tagConfig = {
         middle: { label: "middle", color: "yellow" },
         high: { label: "high", color: "yellow" },
     },
-    location: {
-        home: { label: "home", color: "blue" },
-        classroom: { label: "classroom", color: "blue" },
-        both: { label: "both", color: "blue" },
-    },
     subject: {
+        "aeronautics engineering": { label: "aeronautics", color: "red" },
         "bioengineering": { label: "bioengineering", color: "red" },
-        "chemical engineering": { label: "chemical", color: "red" },
         "civil engineering": { label: "civil", color: "red" },
         "mechanical engineering": { label: "mechanical", color: "red" },
         "electrical engineering": { label: "electrical", color: "red" },
@@ -47,7 +42,6 @@ function Projects() {
             title: "bionic hands",
             image: hand,
             gradeLevel: "elementary",
-            location: "both",
             subject: "bioengineering",
             difficulty: "easy",
             pdf: "/pdfs/bionic_hand.pdf"
@@ -56,8 +50,7 @@ function Projects() {
             title: "wind-powered sail boats",
             image: butterfly,
             gradeLevel: "elementary",
-            location: "both",
-            subject: "civil engineering",
+            subject: "aeronautics engineering",
             difficulty: "easy",
             pdf: "/pdfs/wind_powered_sailboat.pdf"
         },
@@ -65,7 +58,6 @@ function Projects() {
             title: "cs shark tank",
             image: laptop,
             gradeLevel: "high",
-            location: "both",
             subject: "computer science",
             difficulty: "medium",
             pdf: "/pdfs/cs_shark_tank.pdf"
@@ -74,16 +66,14 @@ function Projects() {
             title: "led paper flower",
             image: flower,
             gradeLevel: "elementary",
-            location: "both",
             subject: "electrical engineering",
-            difficulty: "difficult",
+            difficulty: "medium",
             pdf: "/pdfs/led_paper_flower.pdf"
         },
         {
             title: "diy operation",
             image: questionMark,
             gradeLevel: "high",
-            location: "both",
             subject: "electrical engineering",
             difficulty: "difficult",
             pdf: "/pdfs/operation.pdf"
@@ -92,7 +82,6 @@ function Projects() {
             title: "wind-powered LEDs",
             image: led,
             gradeLevel: "middle",
-            location: "both",
             subject: "electrical engineering",
             difficulty: "medium",
             pdf: "/pdfs/led_windmills.pdf"
@@ -101,7 +90,6 @@ function Projects() {
             title: "pool noodle rollercoasters",
             image: arrow,
             gradeLevel: "middle",
-            location: "both",
             subject: "mechanical engineering",
             difficulty: "medium",
             pdf: "/pdfs/roller_coaster.pdf"
@@ -110,8 +98,7 @@ function Projects() {
             title: "play-doh circuits",
             image: dots,
             gradeLevel: "elementary",
-            location: "both",
-            subject: "mechanical engineering",
+            subject: "electrical engineering",
             difficulty: "medium",
             pdf: "/pdfs/play_doh_circuits.pdf"
         },
@@ -119,7 +106,6 @@ function Projects() {
             title: "water filtration",
             image: waterDrops,
             gradeLevel: "middle",
-            location: "both",
             subject: "civil engineering",
             difficulty: "easy",
             pdf: "/pdfs/water_filtration.pdf"
@@ -128,7 +114,6 @@ function Projects() {
             title: "lemon battery + solar oven",
             image: lemon,
             gradeLevel: "middle",
-            location: "both",
             subject: "electrical engineering",
             difficulty: "easy",
             pdf: "/pdfs/lemon_batteries_solar_oven.pdf"
@@ -137,24 +122,21 @@ function Projects() {
 
     const [selectedFilters, setSelectedFilters] = useState({
         gradeLevel: [],
-        location: [],
         subject: [],
         difficulty: []
     });
 
     const categoryDisplayNames = {
         gradeLevel: "grade level",
-        location: "home or classroom",
         subject: "subject",
         difficulty: "difficulty"
     };
 
     const filterOptions = {
         gradeLevel: ["elementary", "middle", "high"],
-        location: ["home", "classroom", "both"],
         subject: [
+            "aeronautics engineering",
             "bioengineering",
-            "chemical engineering",
             "civil engineering",
             "mechanical engineering",
             "electrical engineering",
@@ -190,7 +172,6 @@ function Projects() {
         let temp = projects.filter(project => {
             return (
             (selectedFilters.gradeLevel.length === 0 || selectedFilters.gradeLevel.includes(project.gradeLevel)) &&
-            (selectedFilters.location.length === 0 || selectedFilters.location.includes(project.location)) &&
             (selectedFilters.subject.length === 0 || selectedFilters.subject.includes(project.subject)) &&
             (selectedFilters.difficulty.length === 0 || selectedFilters.difficulty.includes(project.difficulty))
             );
@@ -232,7 +213,7 @@ function Projects() {
 
                     <div className="projects-grid">
                         {filteredProjects.map((p, i) => {
-                            const tags = ["gradeLevel", "location", "subject", "difficulty"].map(
+                            const tags = ["gradeLevel", "subject", "difficulty"].map(
                             category => tagConfig[category][p[category]]
                             );
                             return <ProjectsCard key={i} {...p} tags={tags} />;
