@@ -3,6 +3,22 @@
     src: url("./fonts/Recoleta_SemiBold.ttf") format("truetype");
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content {
+  flex: 1;
+}
+
 .contact_title {
     display: flex;
     font-size : 80px;

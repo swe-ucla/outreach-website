@@ -82,7 +82,12 @@ function Home() {
                                     <p>All questions and inquiries can be directed to our email. To stay updated on events we're hosting 
                                         (both online and in-person), sign up for our mailing list!
                                     </p>
-                                    <button className="learn-more-button">sign up</button>
+                                    <button 
+                                        className="learn-more-button"
+                                        onClick={() => window.open("https://forms.gle/eE1FqQzhnTRzESs86", "_blank")}
+                                    >
+                                        sign up
+                                    </button>
                                 </div>
                             </div>
                         </div>
