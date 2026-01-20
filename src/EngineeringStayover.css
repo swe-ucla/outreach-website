@@ -1,89 +1,183 @@
 .esp-section {
     display: flex;
-    justify-content: center;
-}
-.esp-content {
-    display: flex;
     flex-direction: column;
-    padding: 8rem;
-    padding-top: 3rem;
+    justify-content: center;
+    position: relative;
 }
+
+.esp-gradient {
+    background: linear-gradient(
+        to bottom,
+        #d0cbea,
+        #ffffff
+    );
+}
+
+.esp-top-content {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
 .esp-title {
     font-family: "RecoletaBold";
+    color: #12016d;
     font-size: 4rem;
-    text-align: left;
     line-height: 1;
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
 }
 
-.esp-info {
-    display: flex;
-    gap: 4rem;
-}
-
-.esp-text {
+.esp-description {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.3rem;
-    text-align: left;
-    max-width: 20rem;
+    font-size: 1.5rem;
+    color: #524982;
     line-height: 1.3;
     margin-top: 1rem;
 }
 
-.esp-images {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 35rem;
+.esp-register-btn {
+    margin-top: 1.5rem;
+
+    padding: 0.9rem 2.2rem;
+    border-radius: 0.5rem;
+
+    background-color: #8e82d1;
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    border: none;
+    cursor: pointer;
+
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
 }
 
-.full-width img,
-.stacked-images img {
-    width: 100%;
-    height: auto;
-    display: block;
+.esp-register-btn:hover {
+    opacity: 0.8;
+}
+
+.esp-register-btn .arrow {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.9rem;
+    transform: scaleY(1.5);
+}
+
+.esp-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.carousel-viewport {
+    width: 100vw;
+    overflow: hidden;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0.5) 0%,
+        black 20%,
+        black 80%,
+        rgba(0,0,0,0.5) 100%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0.5) 0%,
+        black 20%,
+        black 80%,
+        rgba(0,0,0,0.5) 100%
+    );
+}
+
+.carousel-track {
+    display: flex;
+    gap: 3.5rem;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    height: 30rem;
+    width: auto;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
-.side-images {
-    display: flex;
-    gap: 1rem;
-}
-
-.side-images img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.side-images p{
-    font-family: "ProvidenceSansBold";
-    text-align: left;
-}
-
-.stacked-images {
-    position: relative;
-}
-
-.top-image {
+.carousel-btn {
     position: absolute;
-    top: 25px;
-    left: 20px;
-    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #543fcd;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 5;
+    line-height: 1;
 }
 
-.caption1 {
-    font-family: "ProvidenceSansBold";
-    font-size: 1rem;
-    margin: 0;
-    text-align: left;
-
+.carousel-btn.left {
+    left: 5rem;
 }
 
-.caption2 {
+.carousel-btn.right {
+    right: 5rem;
+}
+
+.esp-carousel-caption {
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
     font-family: "ProvidenceSansBold";
-    font-size: 1rem;
-    margin-top: .9rem;
-    text-align: left;
+    font-size: 2rem;
+    color: #12016d;
+}
+
+.esp-info-band {
+    background-color: #e6e4fe;
+    padding: 4rem 2rem;
+}
+
+.esp-info-grid {
+    max-width: 60rem;
+    align-items: center;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.esp-info-item h3 {
+    font-family: "RecoletaBold";
+    font-size: 3rem;
+    color: #12016d;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.esp-info-item p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8e82d1;
+    text-align: center;
+    margin-top: 0rem;
 }
