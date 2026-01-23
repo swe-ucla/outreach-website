@@ -41,7 +41,7 @@ function EngineeringStayover() {
                 </div>
 
                 <div className="photo-slideshow">
-                    <Slideshow images={photos} />
+                    <Slideshow images={photos} initialIndex={2} />
                     <p className="image-caption">Photos from ESP 2025!</p>
                 </div>
             </div>
@@ -57,7 +57,10 @@ function EngineeringStayover() {
                 </div>
                 <div className="cost">
                     <h2>cost</h2>
-                    <p>Our events are free to attend for all.</p>
+                    <p>
+                        The program itself is free for students, but you are
+                        responsible for your own transportation to and from UCLA.
+                    </p>
                 </div>
             </div>
             <Footer />
