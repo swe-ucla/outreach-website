@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./ProjectScientist.css";
 import Slideshow from "./components/Slideshow";
 
@@ -59,6 +60,7 @@ function EngineeringStayover() {
                     <p>Our events are free to attend for all.</p>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

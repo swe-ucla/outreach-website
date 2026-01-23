@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import ProjectsCard from "./ProjectsCard";  
 import "./Projects.css";
 
@@ -223,6 +224,7 @@ function Projects() {
                 </div>
 
             </div>
+            <Footer />
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./ProjectScientist.css";
 import Slideshow from "./components/Slideshow";
 import image1 from "./image1.png";
@@ -175,6 +176,7 @@ function HiEngineer() {
           </table>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import TeamMember from "./TeamMember";
 import "./MeetTheTeam.css";
 
@@ -116,6 +117,7 @@ function MeetTheTeam() {
                     ))}
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }
