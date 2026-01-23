@@ -21,68 +21,74 @@
     line-height: 1.1;
 }
 
-.workshop_desc {
-    font-size: 1.3rem;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 14%;
-    text-align: left;
-    line-height: 1.5;
-}
-
 .fall_workshop_content {
     display: flex;
-    align-items: flex-start;
-    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem 2rem 4rem;
 }
 
-.workshop_image_container {
-    position: relative;
-    height: 1200px;
+.workshop_subtitle {
+    font-family: "Recoleta", "Georgia", serif;
+    font-size: 2.5rem;
+    color: #12016d;
+    margin: 0;
 }
 
-.workshop_top_image {
-    width: 400px;
-    height: auto;
+.workshop_cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    width: 100%;
+    max-width: 72rem;
 }
 
-.workshop_bottom_image {
-    position: absolute;
-    top: 380px;
-    left: 270px;
-    width: 400px;
-    height: auto;
-    z-index: -1;
-}
-
-.prev_rec_box {
-    width: 670px;
-    height: 200px;
-    border: 6px solid black;
+.workshop_card {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 16px 40px rgba(18, 1, 109, 0.08);
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
     align-items: center;
-    margin: 2rem auto;
-    border-radius: 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 930px;
+    gap: 1.5rem;
 }
 
-.prev_rec_box a {
-    text-decoration: none; 
-    font-size: large;
-    color: #000000;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border: 2px solid #000000;
-    border-radius: 4px;
+.workshop_card_image {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    display: block;
 }
 
-.prev_rec_box a:hover {
-    background-color: #a298da;
-    transform: scale(1.05);
-    color: #000000;
+.workshop_card_link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5a4aa6;
+    padding: 0.7rem 1.8rem;
+    border: 2px solid #b8acd6;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.workshop_card_link::after {
+    content: "➜";
+    font-size: 1.2rem;
+}
+
+.workshop_card_link:hover {
+    background-color: #e9e5f6;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .workshop_cards {
+        grid-template-columns: 1fr;
+    }
 }
