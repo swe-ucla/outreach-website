@@ -116,6 +116,10 @@ p {
     font-weight: bold;
     color: white;
     background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     cursor: pointer;
     transition: transform 0.1s ease;
 }
@@ -127,6 +131,17 @@ p {
 
 .learn-more-button:active {
     transform: scale(0.95)
+}
+
+.contact-arrow {
+    font-size: 3.25rem;
+    line-height: 1;
+}
+
+.contact-arrow-icon {
+    display: block;
+    line-height: 1;
+    transform: translateY(-0.2rem);
 }
 
 .top-cards {

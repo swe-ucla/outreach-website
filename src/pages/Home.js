@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Home.css';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer'
@@ -32,7 +33,6 @@ function Home() {
                                 of women in engineering. during the school year, we host several events for local students 
                                 to learn various engineering concepts.
                             </p>
-                            <button className="learn-more-button">learn more</button>
                         </div>
                     </div>
                 </div>
@@ -82,12 +82,9 @@ function Home() {
                                     <p>All questions and inquiries can be directed to our email. To stay updated on events we're hosting 
                                         (both online and in-person), sign up for our mailing list!
                                     </p>
-                                    <button 
-                                        className="learn-more-button"
-                                        onClick={() => window.open("https://forms.gle/eE1FqQzhnTRzESs86", "_blank")}
-                                    >
-                                        sign up
-                                    </button>
+                                    <Link className="learn-more-button contact-arrow" to="/contact-us" aria-label="contact us">
+                                        &rarr;
+                                    </Link>
                                 </div>
                             </div>
                         </div>
