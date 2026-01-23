@@ -25,7 +25,7 @@ function Home() {
                                 {/*@ UCLA image*/}
                                 <div className="second-line">
                                     <p>@</p>
-                                    <img src='./images/ucla_white_logo.svg' alt='UCLA logo'></img>
+                                    <img src='/images/ucla_white_logo.svg' alt='UCLA logo'></img>
                                 </div>                       
                             </div>
                             <p className='home-text'>hi! we’re a passionate group of college students dedicated to inspiring the next generation 
@@ -53,7 +53,7 @@ function Home() {
                                     </p>
                                    
                                 </div>
-                                <img src='./images/left.png' alt='instructor speaking'/>
+                                <img src='/images/left.png' alt='instructor speaking'/>
                             </div>
                             <div className="right">
                                 <div className="overlay-text">
@@ -67,13 +67,13 @@ function Home() {
                                     </p>
 
                                 </div>
-                                <img src='./images/right.png' alt='instructor demonstrating'/>
+                                <img src='/images/right.png' alt='instructor demonstrating'/>
                             </div>
 
                         </div>
                         <div className="bottom-card">
                             <div className="bottom">
-                                <img src='./images/bottom.png' alt='hi engineers' />
+                                <img src='/images/bottom.png' alt='hi engineers' />
                             </div>
 
                             <div className="purple-card">

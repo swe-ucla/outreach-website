@@ -3,34 +3,29 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./ProjectScientist.css";
 import Slideshow from "./components/Slideshow";
-import image1 from "./image1.png";
-import image2 from "./image 2 Hi Engineer.png";
-import image3 from "./image 3 Hi Engineer.png";
-import image4 from "./image4.png";
-import image5 from "./image5.png";
 
 function HiEngineer() {
   const photos = [
     {
-      src: image1,
+      src: "/images/image1.png",
       caption:
         "middle and high school students completed hands-on, practical engineering activities at Hi Engineer!",
     },
     {
-      src: image2,
+      src: "/images/image 2 Hi Engineer.png",
       caption:
         "middle and high school students completed hands-on, practical engineering activities at Hi Engineer!",
     },
     {
-      src: image3,
+      src: "/images/image 3 Hi Engineer.png",
       caption: "keystone speakers inspire young Hi Engineer! attendees to dream big!",
     },
     {
-      src: image4,
+      src: "/images/image4.png",
       caption: "keystone speakers inspire young Hi Engineer! attendees to dream big!",
     },
     {
-      src: image5,
+      src: "/images/image5.png",
       caption: "keystone speakers inspire young Hi Engineer! attendees to dream big!",
     },
   ];

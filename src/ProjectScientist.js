@@ -4,32 +4,25 @@ import Footer from "./components/Footer";
 import "./ProjectScientist.css";
 import Slideshow from "./components/Slideshow";
 
-import img1 from "./images/proj_sci1.JPG";
-import img2 from  "./images/proj_sci2.png";
-import img3 from "./images/proj_sci3.png";
-import img4 from "./images/proj_sci4.png";
-import img5 from "./images/proj_sci5.jpg";
-import img6 from "./images/proj_sci6.jpg";
-
 function ProjectScientist() {
     const photos = [
         {
-            src: img1, caption: "Outreach members teach elementary school students about harnessing clean forms of energy using paper sailboats!"
+            src: "/images/proj_sci1.JPG", caption: "Outreach members teach elementary school students about harnessing clean forms of energy using paper sailboats!"
         },
         {
-            src: img2, caption: "Elementary school students working on their paper sailboats!"
+            src: "/images/proj_sci2.png", caption: "Elementary school students working on their paper sailboats!"
         },
         {
-            src: img3, caption: "Outreach members teach elementary school students about harnessing clean forms of energy using paper sailboats!"
+            src: "/images/proj_sci3.png", caption: "Outreach members teach elementary school students about harnessing clean forms of energy using paper sailboats!"
         },
         {
-            src: img4, caption: "Two students smile while holding their sailboats."
+            src: "/images/proj_sci4.png", caption: "Two students smile while holding their sailboats."
         },
         {
-            src: img5, caption: "Elementary school students working on their paper sailboats!"
+            src: "/images/proj_sci5.jpg", caption: "Elementary school students working on their paper sailboats!"
         },
         {
-            src: img6, caption: "Elementary school students working on their paper sailboats!"
+            src: "/images/proj_sci6.jpg", caption: "Elementary school students working on their paper sailboats!"
         }
 ]
 

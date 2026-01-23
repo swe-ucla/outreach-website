@@ -103,7 +103,7 @@ function MeetTheTeam() {
             <Header />
             <section className="team-section">
                 <h1 className="team-title">meet the team!</h1>
-                <div className="group-photo"> <img src='./images/meet_the_team.jpg'/> </div>
+                <div className="group-photo"> <img src='/images/meet_the_team.jpg'/> </div>
                 <div className="team-grid">
                     {members.map((member, index) => (
                         <TeamMember 

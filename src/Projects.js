@@ -5,17 +5,6 @@ import Footer from "./components/Footer";
 import ProjectsCard from "./ProjectsCard";  
 import "./Projects.css";
 
-import hand from "./images/hand.png";
-import butterfly from "./images/butterfly.png";
-import laptop from "./images/cs shark tank.png";
-import flower from "./images/flower.png";
-import questionMark from "./images/diy operation.png";
-import led from "./images/led.png";
-import arrow from "./images/pool noodle.png";
-import dots from "./images/play-doh.png";
-import waterDrops from "./images/water_drops.png";
-import lemon from "./images/lemon.png";
-
 const tagConfig = {
     gradeLevel: {
         elementary: { label: "elementary", color: "yellow" },
@@ -41,7 +30,7 @@ function Projects() {
     const projects = [
         {
             title: "bionic hands",
-            image: hand,
+            image: "/images/hand.png",
             gradeLevel: "elementary",
             subject: "bioengineering",
             difficulty: "easy",
@@ -49,7 +38,7 @@ function Projects() {
         },
         {
             title: "wind-powered sail boats",
-            image: butterfly,
+            image: "/images/butterfly.png",
             gradeLevel: "elementary",
             subject: "aeronautics engineering",
             difficulty: "easy",
@@ -57,7 +46,7 @@ function Projects() {
         },
         {
             title: "cs shark tank",
-            image: laptop,
+            image: "/images/cs shark tank.png",
             gradeLevel: "high",
             subject: "computer science",
             difficulty: "medium",
@@ -65,7 +54,7 @@ function Projects() {
         },
         {
             title: "led paper flower",
-            image: flower,
+            image: "/images/flower.png",
             gradeLevel: "elementary",
             subject: "electrical engineering",
             difficulty: "medium",
@@ -73,7 +62,7 @@ function Projects() {
         },
         {
             title: "diy operation",
-            image: questionMark,
+            image: "/images/diy operation.png",
             gradeLevel: "high",
             subject: "electrical engineering",
             difficulty: "difficult",
@@ -81,7 +70,7 @@ function Projects() {
         },
         {
             title: "wind-powered LEDs",
-            image: led,
+            image: "/images/led.png",
             gradeLevel: "middle",
             subject: "electrical engineering",
             difficulty: "medium",
@@ -89,7 +78,7 @@ function Projects() {
         },
         {
             title: "pool noodle rollercoasters",
-            image: arrow,
+            image: "/images/pool noodle.png",
             gradeLevel: "middle",
             subject: "mechanical engineering",
             difficulty: "medium",
@@ -97,7 +86,7 @@ function Projects() {
         },
         {
             title: "play-doh circuits",
-            image: dots,
+            image: "/images/play-doh.png",
             gradeLevel: "elementary",
             subject: "electrical engineering",
             difficulty: "medium",
@@ -105,7 +94,7 @@ function Projects() {
         },
         {
             title: "water filtration",
-            image: waterDrops,
+            image: "/images/water_drops.png",
             gradeLevel: "middle",
             subject: "civil engineering",
             difficulty: "easy",
@@ -113,7 +102,7 @@ function Projects() {
         },
         {
             title: "lemon battery + solar oven",
-            image: lemon,
+            image: "/images/lemon.png",
             gradeLevel: "middle",
             subject: "electrical engineering",
             difficulty: "easy",
