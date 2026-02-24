@@ -23,7 +23,7 @@ function MeetTheTeam() {
     const members = [
         { name: "Nikitha Ambatipudi",
           major:"Electrical Engineering",
-          year: "2nd Year",
+          year: "3rd Year",
           blurb:"Outreach External Director",
           funFact: "Fun Fact: I’ve been to 25 US States.",
           photo: nikithaHeadshot,
@@ -107,7 +107,7 @@ function MeetTheTeam() {
         },
         { name: "Sarah Goldberg",
           major: "Materials Science",
-          year: "1st Year",
+          year: "2nd Year",
           blurb: "Middle School Activity Lead",
           funFact: "Fun fact: I've been skiing since I was 3 years old.",
           photo: sarahHeadshot,
