@@ -6,13 +6,13 @@ function Footer() {
       <nav className="footer_nav">
         <ul>
             <li className="footer_item">
-                <img src="/images/ig_icon.png" className="footer_icon"/>
-                <a href="https://www.instagram.com/swe.ucla/?hl=en" target="_blank">@swe.ucla</a>
+                <img src="/images/ig_icon.png" className="footer_icon" alt="Instagram"/>
+                <a href="https://www.instagram.com/swe.ucla/?hl=en" target="_blank" rel="noreferrer">@swe.ucla</a>
             </li>
 
             <li className="footer_item">
-                <img src="/images/ig_icon.png" className="footer_icon"/>
-                <a href="https://www.instagram.com/uclasweoutreach/?hl=en" target="_blank">@uclasweoutreach</a>
+                <img src="/images/ig_icon.png" className="footer_icon" alt="Instagram"/>
+                <a href="https://www.instagram.com/uclasweoutreach/?hl=en" target="_blank" rel="noreferrer">@uclasweoutreach</a>
             </li>
             
             <li className="footer_item">
@@ -20,13 +20,13 @@ function Footer() {
             </li>
             
             <li className="footer_item">
-                <img src="/images/globe_icon.png" className="footer_icon"/>
-                <a href="https://ucla.swe.org/" target="_blank">ucla.swe.org</a>
+                <img src="/images/globe_icon.png" className="footer_icon" alt="Website"/>
+                <a href="https://ucla.swe.org/" target="_blank" rel="noreferrer">ucla.swe.org</a>
             </li>
 
             <li className="footer_item">
-                <img src="/images/mail_icon.png" className="footer_icon"/>
-                <a href="mailto:outreach.swe.ucla@gmail.com" target="_blank">outreach.swe.ucla@gmail.com</a>
+                <img src="/images/mail_icon.png" className="footer_icon" alt="Email"/>
+                <a href="mailto:outreach.swe.ucla@gmail.com" target="_blank" rel="noreferrer">outreach.swe.ucla@gmail.com</a>
             </li>
         </ul>
       </nav>

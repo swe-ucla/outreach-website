@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -72,11 +72,7 @@ function Projects() {
         });
     };
 
-    useEffect(() => {
-        filterProjects();
-    }, [selectedFilters]);
-
-    const filterProjects = () => {
+    const filterProjects = useCallback(() => {
         let temp = projects.filter(project => {
             return (
             (selectedFilters.gradeLevel.length === 0 || selectedFilters.gradeLevel.includes(project.gradeLevel)) &&
@@ -85,7 +81,11 @@ function Projects() {
             );
         });
         setFilteredProjects(temp);
-    };
+    }, [selectedFilters]);
+
+    useEffect(() => {
+        filterProjects();
+    }, [filterProjects]);
 
     return (
         <div>

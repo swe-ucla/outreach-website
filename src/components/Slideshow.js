@@ -1,7 +1,7 @@
 import React from "react";
 import "./Slideshow.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectCoverflow } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import 'swiper/css';
