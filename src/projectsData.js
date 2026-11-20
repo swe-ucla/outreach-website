@@ -78,7 +78,40 @@ const projects = [
         subject: "electrical engineering",
         difficulty: "easy",
         pdf: "/pdfs/lemon_batteries_solar_oven.pdf"
-    }  
+    },
+    {
+        title: "rubber band propelled car",
+        image: "/images/rubber_band_car.svg",
+        gradeLevel: "high",
+        subject: "mechanical engineering",
+        difficulty: "difficult",
+        pdf: "/pdfs/rubber_band_car.pdf"
+    },
+    {
+        title: "glow salt circuit",
+        image: "/images/glow_salt_circuit.svg",
+        gradeLevel: "middle",
+        subject: "electrical engineering",
+        difficulty: "easy",
+        pdf: "/pdfs/glow_salt_circuit.pdf"
+    },
+    {
+        title: "ocean garbage collector",
+        image: "/images/ocean_garbage_collector.svg",
+        gradeLevel: "high",
+        subject: "mechanical engineering",
+        difficulty: "medium",
+        pdf: "/pdfs/ocean-garbage.pdf"
+    },
+    {
+        title: "metalworking and crystal workshop",
+        image: "/images/metal_crystal.svg",
+        gradeLevel: "middle",
+        subject: "materials science",
+        difficulty: "difficult",
+        pdf: "/pdfs/metalworking_crystal.pdf"
+    }
 ];
+
 
 export default projects;

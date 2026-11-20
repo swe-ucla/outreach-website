@@ -19,6 +19,7 @@ const tagConfig = {
         "mechanical engineering": { label: "mechanical", color: "red" },
         "electrical engineering": { label: "electrical", color: "red" },
         "computer science": { label: "comp sci", color: "red" },
+        "materials science": { label: "materials", color: "red" },
     },
     difficulty: {
         easy: { label: "easy", color: "green" },
@@ -48,7 +49,8 @@ function Projects() {
             "civil engineering",
             "mechanical engineering",
             "electrical engineering",
-            "computer science"
+            "computer science",
+            "materials science"
         ],
         difficulty: ["easy", "medium", "difficult"]
     };
